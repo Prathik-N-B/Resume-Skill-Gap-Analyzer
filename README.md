@@ -27,11 +27,11 @@ A web-based application that analyzes resumes against job descriptions to identi
   <img src="screenshots/JD-sample.png" width="48%" alt="Job Description">
 </p>
 
-<div align="center">
-   <div style="width: 25%; text-align: center;">
+<div style="display: flex; width: 100%;">
+  <div style="width: 50%; text-align: center;">
     <b>Resume Upload</b>
   </div>
-  <div style="width: -25%; text-align: center;">
+  <div style="width: 50%; text-align: center;">
     <b>Job Description</b>
   </div>
 </div>
