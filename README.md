@@ -22,16 +22,18 @@ A web-based application that analyzes resumes against job descriptions to identi
 
 ### Resume Upload and Job Description
 
-<p align="center">
-  <img src="screenshots/upload.png" width="48%" height="400" alt="Resume Upload">
-  <img src="screenshots/JD-sample.png" width="48%" height="400" alt="Job Description">
-</p>
-
-<p align="center">
-  <b>Resume Upload</b>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Job Description</b>
-</p>
+<table border="0" width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshots/upload.png" width="100%">
+      <br><b>Resume Upload</b>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshots/JD-sample.png" width="100%">
+      <br><b>Job Description</b>
+    </td>
+  </tr>
+</table>
 
 ### Skill Gap Analysis
 <p align="center">
