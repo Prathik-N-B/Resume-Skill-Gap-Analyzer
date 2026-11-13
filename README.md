@@ -13,6 +13,20 @@ A web-based application that analyzes resumes against job descriptions to identi
 - **Skill Gap Identification:** Display matched, missing, and additional skills.
 - **Interactive Dashboard:** View analysis results through a simple and user-friendly interface.
 
+## Application Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Resume Upload
+![Resume Upload](screenshots/upload.png)
+
+### Job Description
+![Job Description](screenshots/JD-sample.png)
+
+### Skill Gap Analysis
+![Analysis Results](screenshots/analysis.png)
+
 ## Technology Stack
 
 ### Frontend

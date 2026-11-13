@@ -308,6 +308,14 @@ footer {
   font-size: 12px;
 }
 
+.intro p {
+  color: #687080;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 @media (max-width: 750px) {
   .main-grid,
   .skills-grid,

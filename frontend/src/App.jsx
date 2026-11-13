@@ -141,7 +141,7 @@ function App() {
             {text && (
               <div className="resume-info">
                 <h3>Resume Uploaded</h3>
-                <p>Your resume text has been extracted successfully.</p>
+                <p text-align="center">Your resume text has been extracted successfully.</p>
 
                 <details>
                   <summary>View Extracted Text</summary>
