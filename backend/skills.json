@@ -1,0 +1,56 @@
+{
+  "programming": [
+    "python",
+    "java",
+    "c",
+    "c++",
+    "c#",
+    "javascript",
+    "typescript"
+  ],
+  "frontend": [
+    "html",
+    "css",
+    "react",
+    "angular",
+    "vue"
+  ],
+  "backend": [
+    "node.js",
+    "express",
+    "flask",
+    "django"
+  ],
+  "database": [
+    "sql",
+    "mysql",
+    "mongodb",
+    "postgresql",
+    "oracle"
+  ],
+  "tools": [
+    "git",
+    "github",
+    "docker",
+    "linux",
+    "postman"
+  ],
+  "data_ai": [
+    "machine learning",
+    "deep learning",
+    "pandas",
+    "numpy",
+    "tensorflow",
+    "pytorch",
+    "scikit-learn"
+  ],
+  "other": [
+    "rest api",
+    "data structures",
+    "algorithms",
+    "oop",
+    "operating systems",
+    "computer networks",
+    "dbms"
+  ]
+}
