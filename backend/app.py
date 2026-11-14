@@ -5,7 +5,12 @@ from skill_extractor import extract_skills
 from analyzer import analyze_skills
 
 app = Flask(__name__)
+app.config["MAX_CONTENT_LENGTH"] = 5 * 1024 * 1024
 CORS(app)
+
+@app.errorhandler(413)
+def request_entity_too_large(_error):
+    return jsonify({"error": "The PDF must be 5 MB or smaller."}), 413
 
 @app.route("/")
 def home():
@@ -32,8 +37,8 @@ def upload_resume():
             "skills": skills
         })
     
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+    except ValueError as error:
+        return jsonify({"error": str(error)}), 400
 
 @app.route("/analyze", methods=["POST"])
 def analyze_resume():
@@ -62,4 +67,4 @@ def analyze_resume():
     })
     
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(debug=False, port=5000)

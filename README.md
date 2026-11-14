@@ -82,74 +82,68 @@ Resume-Skill-Gap-Analyzer/
 
 ## Installation and Setup
 
-Follow these steps to run the project locally.
+### Requirements
 
-### 1. Clone the Repository
+- Python 3.12
+- Node.js and npm
 
-```bash
+### 1. Clone the repository
+
+```powershell
 git clone https://github.com/Prathik-N-B/Resume-Skill-Gap-Analyzer.git
-```
-
-```bash
 cd Resume-Skill-Gap-Analyzer
 ```
 
-### 2. Backend Setup
+### 2. Install backend dependencies
 
-Navigate to the backend directory:
-
-```bash
-cd backend
-```
-
-Create and activate a Python virtual environment from the project root:
+Run these commands from the project root:
 
 ```powershell
-cd ..
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
+py -m venv backend\.venv
+.\backend\.venv\Scripts\python.exe -m pip install -r .\backend\requirements-dev.txt
 ```
 
-Install the required Python packages:
+### 3. Configure and install the frontend
 
-```bash
-pip install Flask Flask-Cors PyMuPDF
+Create `frontend\.env.local` with:
+
+```env
+VITE_API_URL=http://127.0.0.1:5000
 ```
 
-Start the Flask backend:
+Then install the frontend dependencies:
 
 ```powershell
-cd backend
-python app.py
-```
-
-The backend will run at:
-
-`http://127.0.0.1:5000`
-
-### 3. Frontend Setup
-
-Open another terminal and navigate to the frontend directory:
-
-```bash
-cd frontend
-```
-
-Install dependencies:
-
-```bash
+cd .\frontend
 npm install
 ```
 
-Start the development server:
+### 4. Run the application
 
-```bash
+Open two terminals at the project root.
+
+In the first terminal, start the backend:
+
+```powershell
+.\backend\.venv\Scripts\python.exe .\backend\app.py
+```
+
+In the second terminal, start the frontend:
+
+```powershell
+cd .\frontend
 npm run dev
 ```
 
-The frontend will run at:
+Open the URL Vite prints in the terminal, usually `http://localhost:5173`.
 
-`http://localhost:5173`
+### 5. Run backend tests
+
+From the project root:
+
+```powershell
+.\backend\.venv\Scripts\python.exe -m pytest .\backend\tests
+```
 
 ## How It Works
 

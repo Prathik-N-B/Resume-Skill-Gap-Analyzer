@@ -2,13 +2,22 @@ import pymupdf
 
 
 def extract_text_from_pdf(file):
-    text = ""
+    data = file.read()
+    if not data:
+        raise ValueError("The uploaded file is empty.")
 
-    pdf = pymupdf.open(stream=file.read(), filetype="pdf")
+    try:
+        with pymupdf.open(stream=data, filetype="pdf") as pdf:
+            if pdf.page_count == 0:
+                raise ValueError("The PDF has no pages.")
 
-    for page in pdf:
-        text += page.get_text()
+            text = "\n".join(page.get_text() for page in pdf)
+    except pymupdf.FileDataError as error:
+        raise ValueError("The uploaded file is not a valid PDF.") from error
 
-    pdf.close()
+    if not text.strip():
+        raise ValueError(
+            "No selectable text found. Scanned PDFs are not supported yet."
+        )
 
     return text

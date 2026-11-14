@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:5000";
 
 function App() {
   const [file, setFile] = useState(null);
@@ -23,7 +24,7 @@ function App() {
       setLoading(true);
       setMessage("Uploading resume...");
 
-      const response = await fetch("http://127.0.0.1:5000/upload", {
+      const response = await fetch(`${API_BASE_URL}/upload`, {
         method: "POST",
         body: formData,
       });
@@ -61,7 +62,7 @@ function App() {
     try {
       setLoading(true);
 
-      const response = await fetch("http://127.0.0.1:5000/analyze", {
+      const response = await fetch(`${API_BASE_URL}/analyze`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
