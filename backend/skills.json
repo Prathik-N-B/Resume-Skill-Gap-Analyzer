@@ -1,56 +1,149 @@
 {
   "programming": [
-    "python",
-    "java",
-    "c",
-    "c++",
-    "c#",
-    "javascript",
-    "typescript"
+    "python", "java", "c", "c++", "c#", "javascript", "typescript",
+    "go", "golang", "rust", "ruby", "php", "swift", "kotlin",
+    "dart", "r", "scala", "perl", "objective-c", "bash",
+    "shell scripting", "powershell", "assembly", "matlab", "lua",
+    "groovy", "solidity"
   ],
+
   "frontend": [
-    "html",
-    "css",
-    "react",
-    "angular",
-    "vue"
+    "html", "css", "react", "angular", "vue",
+    "html5", "css3", "react.js", "next.js", "nextjs",
+    "vue.js", "svelte", "jquery", "bootstrap", "tailwind css",
+    "material ui", "mui", "sass", "less", "webpack",
+    "vite", "redux", "zustand", "responsive design",
+    "web accessibility", "web components"
   ],
+
   "backend": [
-    "node.js",
-    "express",
-    "flask",
-    "django"
+    "node.js", "express", "flask", "django",
+    "express.js", "fastapi", "spring", "spring boot",
+    "asp.net", ".net", "laravel", "ruby on rails",
+    "nestjs", "restful api", "microservices",
+    "api development", "graphql", "websocket",
+    "authentication", "authorization", "jwt", "oauth"
   ],
+
   "database": [
-    "sql",
-    "mysql",
-    "mongodb",
-    "postgresql",
-    "oracle"
+    "sql", "mysql", "mongodb", "postgresql", "oracle",
+    "sqlite", "postgres", "sql server", "redis",
+    "cassandra", "dynamodb", "firebase", "firestore",
+    "supabase", "neo4j", "mariadb", "elasticsearch",
+    "couchdb", "nosql", "database design",
+    "database normalization", "database administration"
   ],
+
   "tools": [
-    "git",
-    "github",
-    "docker",
-    "linux",
-    "postman"
+    "git", "github", "docker", "linux", "postman",
+    "gitlab", "bitbucket", "visual studio code", "vscode",
+    "intellij idea", "eclipse", "swagger", "jira",
+    "confluence", "figma", "notion", "npm", "yarn",
+    "pnpm", "maven", "gradle", "cmake", "terminal"
   ],
+
   "data_ai": [
-    "machine learning",
-    "deep learning",
-    "pandas",
-    "numpy",
-    "tensorflow",
-    "pytorch",
-    "scikit-learn"
+    "machine learning", "deep learning", "pandas",
+    "numpy", "tensorflow", "pytorch", "scikit-learn",
+    "artificial intelligence", "natural language processing",
+    "nlp", "computer vision", "generative ai",
+    "large language models", "llm", "rag",
+    "retrieval augmented generation", "prompt engineering",
+    "agentic ai", "ai agents", "neural networks",
+    "supervised learning", "unsupervised learning",
+    "reinforcement learning", "scipy", "matplotlib",
+    "seaborn", "plotly", "keras", "opencv",
+    "hugging face", "transformers", "langchain",
+    "llamaindex", "vector databases", "faiss",
+    "chroma", "pinecone", "mlops", "model training",
+    "model evaluation", "feature engineering",
+    "xgboost", "lightgbm", "spacy", "nltk"
   ],
+
+  "data_science": [
+    "data analysis", "data analytics", "data visualization",
+    "data cleaning", "data preprocessing", "data mining",
+    "statistical analysis", "statistics", "power bi",
+    "tableau", "excel", "jupyter notebook", "jupyter",
+    "etl", "data warehousing", "big data", "hadoop",
+    "apache spark", "pyspark", "kafka", "hive",
+    "airflow", "snowflake", "databricks"
+  ],
+
+  "cloud": [
+    "cloud computing", "amazon web services", "aws",
+    "microsoft azure", "azure", "google cloud platform",
+    "gcp", "aws ec2", "aws s3", "aws lambda",
+    "azure functions", "google cloud storage",
+    "cloud deployment", "serverless computing",
+    "cloud architecture", "cloud security",
+    "cloud networking", "terraform"
+  ],
+
+  "devops": [
+    "devops", "kubernetes", "jenkins",
+    "github actions", "gitlab ci", "ci/cd",
+    "continuous integration", "continuous deployment",
+    "ansible", "vagrant", "prometheus", "grafana",
+    "nginx", "apache", "unix", "containerization",
+    "orchestration", "infrastructure as code",
+    "monitoring", "deployment automation"
+  ],
+
+  "testing": [
+    "software testing", "manual testing",
+    "automation testing", "unit testing",
+    "integration testing", "system testing",
+    "regression testing", "performance testing",
+    "selenium", "cypress", "playwright", "jest",
+    "mocha", "pytest", "junit", "testng",
+    "testing frameworks", "test automation",
+    "api testing", "debugging", "quality assurance"
+  ],
+
   "other": [
-    "rest api",
-    "data structures",
-    "algorithms",
-    "oop",
-    "operating systems",
-    "computer networks",
-    "dbms"
+    "rest api", "data structures", "algorithms",
+    "oop", "operating systems", "computer networks", "dbms",
+    "object oriented programming", "functional programming",
+    "database management systems", "software engineering",
+    "software development life cycle", "sdlc",
+    "distributed systems", "computer architecture",
+    "compiler design", "design patterns", "system design",
+    "low level design", "high level design",
+    "problem solving", "time complexity", "space complexity",
+    "dynamic programming", "multithreading",
+    "concurrency", "parallel computing"
+  ],
+
+  "mobile_development": [
+    "android development", "ios development",
+    "react native", "flutter", "android studio",
+    "jetpack compose", "swiftui", "xamarin",
+    "ionic", "kotlin multiplatform"
+  ],
+
+  "cybersecurity": [
+    "cybersecurity", "network security",
+    "information security", "ethical hacking",
+    "penetration testing", "vulnerability assessment",
+    "cryptography", "encryption", "firewalls",
+    "wireshark", "nmap", "burp suite", "kali linux",
+    "owasp", "owasp top 10", "identity management",
+    "access control", "security auditing"
+  ],
+
+  "blockchain": [
+    "blockchain", "ethereum", "bitcoin",
+    "smart contracts", "web3", "hyperledger",
+    "decentralized applications", "dapps",
+    "cryptocurrency", "consensus algorithms"
+  ],
+
+  "software_development": [
+    "software development", "full stack development",
+    "web development", "agile", "scrum", "kanban",
+    "version control", "code review", "clean code",
+    "object oriented design", "software architecture",
+    "requirements analysis", "technical documentation"
   ]
 }
